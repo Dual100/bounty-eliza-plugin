@@ -1,0 +1,22 @@
+{
+  "name": "@bounty/eliza-plugin",
+  "version": "1.0.0",
+  "description": "Eliza plugin for owockibot Bounty Board integration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "keywords": ["eliza", "plugin", "bounty", "ai-agents"],
+  "dependencies": {
+    "@ai16z/eliza": "^0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  },
+  "peerDependencies": {
+    "@ai16z/eliza": ">=0.1.0"
+  }
+}
