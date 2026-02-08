@@ -57,6 +57,32 @@ Status: submitted
 Autograde Score: 100%
 Awaiting review for payment."
 
+## Demo
+
+See the full interactive demo: **[demo.md](demo.md)**
+
+```
+┌──────────────────────────────────────────────────────────────────────┐
+│ User: Hey, what bounties are available right now?                    │
+│                                                                      │
+│ Agent: Let me check the bounty board for you...                      │
+│                                                                      │
+│        📋 OPEN BOUNTIES (10 found)                                   │
+│        #116 │ Build Telegram Bot     │ $30.00 USDC                   │
+│        #105 │ Create Mobile PWA      │ $45.00 USDC                   │
+│        #31  │ Create Eliza Plugin    │ $25.00 USDC                   │
+│        ...                                                           │
+│                                                                      │
+│ User: Claim bounty 116                                               │
+│                                                                      │
+│ Agent: ✓ Claimed bounty #116 for wallet 0x456f...ddb                 │
+│                                                                      │
+│ User: Submit with proof https://github.com/...                       │
+│                                                                      │
+│ Agent: ✓ Submitted! Autograde: 85/100. Awaiting review.              │
+└──────────────────────────────────────────────────────────────────────┘
+```
+
 ## Actions
 
 | Action | Description | Triggers |
@@ -77,17 +103,6 @@ The plugin interacts with:
 - `GET https://bounty.owockibot.xyz/bounties` - List all bounties
 - `POST https://bounty.owockibot.xyz/bounties/{id}/claim` - Claim a bounty
 - `POST https://bounty.owockibot.xyz/bounties/{id}/submit` - Submit work
-
-## Demo
-
-![Eliza Bounty Plugin Demo](demo.gif)
-
-The plugin in action:
-1. Agent discovers high-value coding bounty
-2. Claims the bounty with wallet address
-3. Completes the work
-4. Submits with GitHub proof URL
-5. Receives USDC payment
 
 ## Architecture
 
